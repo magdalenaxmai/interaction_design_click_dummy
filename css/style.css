@@ -307,6 +307,8 @@ a {
 
 .footer {
     background-color: #fff;
+
+    margin-top: 20px;
     width: 100%;
     opacity: 0.8;
     position: fixed;
