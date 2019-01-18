@@ -1,0 +1,30 @@
+
+.first_login{
+    color: #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.first_login p{
+    width: 100%;
+}
+
+.add_first_Payment{
+    background-color: #c3c3c3;
+    border: none;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.5em;
+    border-radius: 50%;
+}
+
+.add_first_Payment a{
+    color: white;
+}

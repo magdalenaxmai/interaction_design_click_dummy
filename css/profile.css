@@ -1,0 +1,22 @@
+.avatar_profile{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.content{
+    color: black;
+    font-size: 1.5em;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.infos{
+    font-size: 0.8em;
+    color: #c3c3c3;
+    line-height: 1.5em;
+}

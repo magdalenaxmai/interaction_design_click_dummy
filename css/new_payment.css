@@ -1,0 +1,29 @@
+.new_payment{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.new_payment_form{
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 140px;
+}
+
+.new_payment_form input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border: 1px solid #c3c3c3;
+}
+
+.new_payment_form textarea{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border: 1px solid #c3c3c3;
+}
+

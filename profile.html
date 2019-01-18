@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Debit Manager - Profile</title>
+    <meta name="description" content="Website to track your debts.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav">
+            <div class="profile_menu">
+                <a href="./profile.html">Magdalena Maislinger</a>
+            </div>
+            <div class="logout">
+                <a href="./index.html">Logout</a>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="your_payments"><a href="./home.html"><i class="fas fa-euro-sign"></i>Your Profile</a></div>
+            <form action="add_payment.html">
+                <button class="addPayment"><a href="#">+</a></button>
+            </form>
+        </div>
+    </header>
+    <div class="content">
+        <p>Magdalena Maislinger</p>
+        <div class="profile_img">
+            <img class="avatar_profile" src="images/avatar.jpg" alt="Profilbild von Freund">
+        </div>
+        <div>
+            <p class="infos">Email<br>mmaislinger.mmt-b2017@fh-salzburg.ac.at</p>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <a href="./impressum.html">Impressum</a>
+    </footer>
+</body>
+<script>
+    getBalance();
+
+    $("#list a.clear").click(function () {
+
+        console.log("hi");
+        $(this).parent().parent().parent().remove();
+        getBalance();
+        return false;
+    });
+
+    function getBalance() {
+
+        let value1 = 0;
+        let value2 = 0;
+        let value3 = 0;
+        let balance_field = document.getElementById('amount');
+        let new_balance;
+
+        if (document.getElementById('amount1') != null) {
+            value1 = parseFloat(document.getElementById('amount1').getAttribute('value'));
+        }
+
+        if (document.getElementById('amount2') != null) {
+            value2 = parseFloat(document.getElementById('amount2').getAttribute('value'));
+        }
+
+        if (document.getElementById('amount3') != null) {
+            value3 = parseFloat(document.getElementById('amount3').getAttribute('value'));
+        }
+
+        let balance = value1 + value2 + value3;
+        balance = balance.toFixed(2);
+
+        console.log(balance);
+
+        if (balance >= 0) {
+            new_balance = "+" + balance;
+            balance_field.style.color = '#00cb74';
+        } else {
+            new_balance = balance;
+            balance_field.style.color = 'red';
+        }
+
+        balance_field.innerHTML = (new_balance);
+    }
+</script>
+
+</html>

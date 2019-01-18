@@ -1,0 +1,169 @@
+/* Sign in*/
+
+.welcome {
+    color: #00cb74;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.app_description{
+    color: #b2b2b2;
+    font-size: 1em;
+    width: 80%;
+    text-align: center;
+}
+
+.sign-in {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background: url("../images/desk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sign__in--field {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    opacity: 0.95;
+    position: fixed;
+    top: 25%;
+    width: 30em;
+    height: 25em;
+}
+
+.sign__in--field .fas {
+    margin-left: 0;
+}
+
+.sign__in--field input{
+    font-size: 1em;
+}
+
+.sign__in--form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px;
+    margin-top:10px;
+    width: 100%;
+    height: 40%;
+}
+
+.input__login {
+    border: none;
+    padding: 10px;
+    width: 80%;
+}
+
+.input__email {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 2px solid #b2b2b2;
+}
+
+.input__password {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 2px solid #b2b2b2;
+}
+
+.label__login {
+    display: none;
+    color: #808080;
+    text-align: right;
+}
+
+.sign__in--button{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sign-in-button{
+    background-color: #00cb74;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+}
+
+.forgot_password{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
+.forgot_password a{
+    color: #00cb74;
+    text-decoration: underline;
+}
+
+.redirect_to_sign_up{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.redirect_to_sign_up a{
+    color: #00cb74;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1200px){
+    .sign-in{
+       background-size: 150%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .sign-in{
+       background-size: 200%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .sign-in{
+       background-size: 450%;
+    }
+
+    .sign__in--field{
+        width: 80%;
+        height: 70%;
+        top: 15%;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------*/

@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex: wrap;
+    flex-direction: column;
+}
+
+.impressum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.topnav{
+    padding-left: 0;
+    width: 100%;
+}
+
+.profile_menu{
+    padding-left: 11%;
+}
+
+header{
+    width: 100%;
+}
