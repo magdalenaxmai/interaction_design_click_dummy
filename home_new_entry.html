@@ -128,7 +128,7 @@
                             <span class="name">Eva Strumegger</span>
                         </div>
                         <span class="description">Pizza</span>
-                        <span class="payment_amount payment_amount_positive" id="amount2" value="30.60">+30,60€</span>
+                        <span class="payment_amount payment_amount_positive" id="amount2" value="30.60">+30.60€</span>
                         <div class="status">not paid</div>
                     </a>
                         <div class="dropdown">
@@ -147,7 +147,7 @@
                             <span class="name">Nicolas Zeller</span>
                         </div>
                         <span class="description">Kino</span>
-                        <span class="payment_amount payment_amount_positive" id="amount4" value="15,20">+15.20€</span>
+                        <span class="payment_amount payment_amount_positive" id="amount4" value="15.20">+15.20€</span>
                         <div class="status">not paid</div>
                     </a>
                         <div class="dropdown">
@@ -181,6 +181,7 @@
         let value1 = 0;
         let value2 = 0;
         let value3 = 0;
+        let value4 = 0;
         let balance_field = document.getElementById('amount');
         let new_balance;
 
@@ -196,7 +197,11 @@
             value3 = parseFloat(document.getElementById('amount3').getAttribute('value'));
         }
 
-        let balance = value1 + value2 + value3;
+        if (document.getElementById('amount4') != null) {
+            value4 = parseFloat(document.getElementById('amount4').getAttribute('value'));
+        }
+
+        let balance = value1 + value2 + value3 + value4;
         balance = balance.toFixed(2);
 
         if (balance >= 0) {
