@@ -10,7 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/first_login.css">
+    <link rel="stylesheet" href="./new_contact.css">
+    <link rel="stylesheet" href="./css/contacts.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
@@ -22,18 +23,18 @@
     <header>
         <div class="topnav">
             <div class="profile_menu">
-                <a href="./profile_new.html">Magdalena Maislinger</a>
+                <a href="./profile.html">Magdalena Maislinger</a>
             </div>
             <div class="contacts">
-                <a href="contacts_no_entry.html">Contacts</a>
+                <a href="home.html">Payments</a>
             </div>
             <div class="logout">
                 <a href="./index.html">Logout</a>
             </div>
         </div>
         <div class="payment">
-            <div class="your_payments"><a href="./new_log_in.html"><i class="fas fa-euro-sign"></i>Your Payments</a></div>
-            <form action="add_first_payment.html">
+            <div class="your_payments"><a href="./home.html"><i class="fas fa-user-friends"></i>Contacts</a></div>
+            <form action="add_payment.html">
                 <button class="addPayment"><a href="#">+</a></button>
             </form>
 
@@ -42,48 +43,28 @@
 
     <div class="content">
         <div class="top-bar">
-            <form class="search">
+            <form class="search_contacts">
                 <i class="fas fa-search"></i>
                 <label for="search">Search</label>
                 <input id="searchinput" type="text">
             </form>
-            <div class="balance">
-                Your Balance: <span class="amount" id="amount">+50,60€</span>
-            </div>
-            <div class="Filter dropdown">
-                Filter
-                <button class="dropbtn"><i class="fas fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                    <a href="./sort_by_negative.html">By negatives</a>
-                    <a href="./sort_by_positives.html">By positives</a>
-                    <a href="#">By date</a>
-                </div>
-            </div>
         </div>
-        <div class="all_categories">
-            <div class="categories">
-                <div class="payment_owner">
-                    <span class="payment_owner" style="text-transform: uppercase;">Name</span>
-                </div>
-                <div class="description">
-                    <span class="description" style="text-transform: uppercase;">Description</span>
-                </div>
-                <div class="payment_amount">
-                    <span class="payment_amount_categorie">Amount</span>
-                </div>
-                <div class="status">
-                    <span class="status" style="text-transform: uppercase;">Status</span>
-                </div>
-                <div>
-                    <i class="fas fa-ellipsis-v"></i>
-                </div>
-            </div>
-        </div>
-        <div class="first_login">
-            <form action="add_first_payment.html">
-                <button class="add_first_Payment"><a href="#">+</a></button>
-                <p>Add new Payment</p>
-            </form>
+
+        <div class="my_contacts">
+            <ul>
+                <li>
+                    <a href="./add_first_contact.html">
+                        <div class="new_contact_image" style="margin-top:0;">
+                            <div>
+                                <div class="add_image">
+                                <span style="margin:0px;">+</span>
+                                add contact
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
     <footer class="footer">
@@ -94,8 +75,6 @@
     getBalance();
 
     $("#list a.clear").click(function () {
-
-        console.log("hi");
         $(this).parent().parent().parent().remove();
         getBalance();
         return false;
@@ -123,8 +102,6 @@
 
         let balance = value1 + value2 + value3;
         balance = balance.toFixed(2);
-
-        console.log(balance);
 
         if (balance >= 0) {
             new_balance = "+" + balance;
