@@ -13,8 +13,8 @@
 * Man gelangt auf die Sign-In Seite
 * Von da aus über Link zur Sign-Up Seite
 * Daten eingeben und Button klicken
+* Profil anzeigen
 * Ein neues Payment erstellen
-* Bild zum Profil hinzufügen
 * Ausloggen
 * Danach über Sign-In einloggen
 * Zeit vergeht -> Jetzt schon mehrere Payments

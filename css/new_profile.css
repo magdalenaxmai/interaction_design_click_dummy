@@ -1,0 +1,12 @@
+.new_profile_image {
+    
+    width: 20%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 10em;
+    background-color: #c2c2c2;
+    border-radius: 100%;
+  }
