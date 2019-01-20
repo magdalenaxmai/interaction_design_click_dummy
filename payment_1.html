@@ -19,42 +19,52 @@
 </head>
 
 <body class="show_payment">
-    <div class="sign__in--field">
+    <div class="payment_">
         <div class="payment_info">
-            Magdalena Maislinger owes you 20,00€ for pizza. Send her a message to remind her!
+            <div class="info">Johanna Repp</div> 
+            <div>owes you</div>
+            <div class="info">
+                    20,00€
+            </div>  
+            <div>
+                    for
+            </div> 
+            <div class="info">
+                    Pizza.
+            </div> 
+            <div>Send her a message to remind her!</div>
         </div>
-        <form class="message_form" action="index.html">
-            <div class="input__email">
+        <form class="message_form" action="home.html">
+            <h1>Send a reminder Message</h1>
+            <div class="input__login">
+                        <i class="fas fa-user"></i>
+                        <label for="name" class="label__login">Name</label>
+                        <input id="name" type="text" class="input_message" placeholder="Name">
+            </div>
+            <div class="input__login">
                 <i class="fas fa-envelope"></i>
                 <label for="email" class="label__login">Email</label>
-                <input id="email" type="text" class="input__login" placeholder="Email">
+                <input id="email" type="text" class="input_message" placeholder="Email">
             </div>
-            <div class="input__password">
-                <i class="fas fa-user"></i>
-                <label for="name" class="label__login">Name</label>
-                <input id="name" type="text" class="input__login" placeholder="Name">
+            <div class="input__login">
+                    <i class="fas fa-envelope"></i>
+                    <label for="email" class="label__login">Message</label>
+                    <textarea id="email" type="text" class="input_message_textarea" placeholder="Message"></textarea>
             </div>
-            <div class="input__password">
-                <i class="fas fa-unlock-alt"></i>
-                <label for="password" class="label__login">Password</label>
-                <input id="password" type="password" class="input__login" placeholder="Password">
-            </div>
-            <div class="input__password">
-                <i class="fas fa-unlock-alt"></i>
-                <label for="confirm_password" class="label__login">Confirm Password</label>
-                <input id="confirm_password" type="password" class="input__login" placeholder="Confirm Password">
-            </div>
-            <div class="sign__in--button">
-                <button class="sign-in-button">Sign Up</button>
+            <div>
+                <button class="send_message" onclick="send_message()">Send Message</button>
             </div>
         </form>
-        <div class="redirect_to_sign_up">
-            Already have an account? <a class="linkt_to_sign_in" href="./index.html">Sign In.</a>
-        </div>
     </div>
     <footer class="footer">
         <a href="./impressum_sign_out.html">Impressum</a>
     </footer>
+
+    <script>
+    function send_message(){
+        alert("Message has been sent.");
+    }
+    </script>
 </body>
 
 </html>
