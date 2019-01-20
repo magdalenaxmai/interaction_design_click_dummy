@@ -27,3 +27,15 @@
     border: 1px solid #c3c3c3;
 }
 
+.back {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+  
+#description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4em;
+}
+

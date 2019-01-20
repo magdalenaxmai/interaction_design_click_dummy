@@ -1,0 +1,45 @@
+.sign-in-button{
+    background-color: #00cb74;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    margin-top: 1em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 94%;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em;
+}
+
+li img {
+    height: 10em;
+    width: 10em;
+    border-radius: 100%;
+    margin-bottom: 1em;
+    object-fit: cover;
+}
+
+li span {
+    margin: 0.3em;
+}
+
+.my_contacts {
+    margin-top: 2em;
+}
+
+.fa-user-friends{
+    padding-left: 5px;
+}
