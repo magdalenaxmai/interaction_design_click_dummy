@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Debit Manager - Add Contact</title>
+    <meta name="description" content="Website to track your debts.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/new_contact.css">
+    <link rel="stylesheet" href="./css/sign_in.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="profile_menu">
+                <a href="./profile.html">Magdalena Maislinger</a>
+            </div>
+            <div class="logout">
+                <a href="./index.html">Logout</a>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="your_payments"><a href="./home.html"><i class="fas fa-user"></i></a>New Contact</div>
+            <form action="add_payment.html">
+                <button class="addPayment"><a href="#">+</a></button>
+            </form>
+        </div>
+    </header>
+    <div class="content new_payment">
+      <div class="new_contact_image">
+        <div>
+          <div class="add_image">
+            <span>+</span>
+            change image
+          </div>
+        </div>
+      </div>
+      <form class="new_payment_form" action="home.html">
+          <label for="name">Name</label>
+          <input id="name" type="text" value="Melanie Reisenbichler">
+          <label for="amount">Phone Number</label>
+          <input id="name" type="text" value="0650 782569277">
+          <label for="amount">IBAN</label>
+          <input id="name" type="text" value="AT47 2300 1267 2345 8975">
+      </form>
+      <div class="sign__in--button">
+        <a href="./contacts_new_entry.html" class="sign-in-button">Save Changes</a></button>
+        <span class="back"><a href="./contacts_new_entry.html" style="color: #000;">Go back</a></span>
+      </div>
+    </div>
+    <footer class="footer">
+        <a href="./impressum.html">Impressum</a>
+    </footer>
+
+
+</body>
+
+</html>
