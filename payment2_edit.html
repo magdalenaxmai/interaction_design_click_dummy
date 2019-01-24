@@ -38,7 +38,7 @@
         </div>
     </header>
     <div class="content new_payment">
-        <form class="new_payment_form" action="home.html">
+        <form class="new_payment_form" action="javascript:history.back()">
             <label for="name">Name</label>
             <input id="name" type="text" value="Luca Pircher">
             <label for="description" value="Kino">Description</label>
@@ -49,8 +49,8 @@
             <div><input type="radio" name="status" value="paid" checked> Paid</div>
             <div><input type="radio" name="status" value="not_paid"> Not Paid</div>
             <div class="sign__in--button">
-                <a href="./home.html" class="sign-in-button">Save Changes</a>
-                <span class="back"><a href="home.html" style="color: #000;">Go back</a></span>
+                <a href="javascript:history.back()" class="sign-in-button">Save Changes</a>
+                <span class="back"><a href="javascript:history.back()" style="color: #000;">Go back</a></span>
             </div>
         </form>
     </div>

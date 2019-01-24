@@ -31,8 +31,8 @@
             </div>
         </div>
         <div class="payment">
-            <div class="your_payments"><a href="./home.html"><i class="fas fa-euro-sign"></i>Your Payments</a></div>
-            <form action="add_payment.html">
+            <div class="your_payments"><a href="./home_new_entry.html"><i class="fas fa-euro-sign"></i>Your Payments</a></div>
+            <form action="+">
                 <button class="addPayment"><a href="#">+</a></button>
             </form>
 
@@ -53,8 +53,8 @@
                 Filter
                 <button class="dropbtn"><i class="fas fa-caret-down"></i></button>
                 <div class="dropdown-content">
-                    <a href="./sort_by_negative.html">By negatives</a>
-                    <a href="./sort_by_positives.html">By positives</a>
+                    <a href="./sort_by_negatives_4entries.html">By negatives</a>
+                    <a href="./sort_by_positives_4entries.html">By positives</a>
                 </div>
             </div>
         </div>
@@ -78,7 +78,27 @@
             </div>
         </div>
         <div class="all_payments">
-                <ul class="list_of_payments" id="list">
+            <ul class="list_of_payments" id="list">
+                    <li class="payment_list_item">
+                            <a class="link_to_payment" href="./payment_2.html">
+                                <div class="payment_owner">
+                                    <img class="avatar" src="images/p2.jpeg" alt="Profilbild von Freund">
+                                    <span class="name">Luca Pircher</span>
+                                </div>
+                                <span class="description">Pizza</span>
+                                <span class="payment_amount payment_amount_negative" id="amount3" value="-20">-20.00€</span>
+                                <div class="status">paid</div>
+                            </a>
+                            <div class="dropdown">
+                                <button class="dropbtn"> <i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="payment_2.html">Pay via PayPal</a>
+                                    <a href="payment2_edit.html">Edit </a>
+                                    <a href="#" class="clear">Delete</a>
+                                </div>
+                            </div>
+        
+                        </li>
                 <li class="payment_list_item">
                     <a class="link_to_payment" href="./payment_1.html">
                         <div class="payment_owner">
@@ -99,8 +119,6 @@
                     </div>
 
                 </li>
-
-              
                 <li class="payment_list_item">
                     <a class="link_to_payment" href="./payment_3.html">
                         <div class="payment_owner">
@@ -108,39 +126,39 @@
                             <span class="name">Eva Strumegger</span>
                         </div>
                         <span class="description">Pizza</span>
-                        <span class="payment_amount payment_amount_positive" id="amount2" value="30.60">+30,60€</span>
+                        <span class="payment_amount payment_amount_positive" id="amount2" value="30.60">+30.60€</span>
                         <div class="status">not paid</div>
                     </a>
                         <div class="dropdown">
                             <button class="dropbtn"> <i class="fas fa-ellipsis-v"></i></button>
                             <div class="dropdown-content">
-                                <a href="payment3.html">Send Message</a>
+                                <a href="payment_3.html">Send Message</a>
                                 <a href="payment3_edit.html">Edit</a>
                                 <a href="#" class="clear">Delete</a>
                             </div>
                         </div>
                 </li>
-
                 <li class="payment_list_item">
-                    <a class="link_to_payment" href="./payment_2.html">
+                    <a class="link_to_payment" href="./payment_4.html">
                         <div class="payment_owner">
-                            <img class="avatar" src="images/p2.jpeg" alt="Profilbild von Freund">
-                            <span class="name">Luca Pircher</span>
+                            <img class="avatar" src="images/p6.jpeg" alt="Profilbild von Freund">
+                            <span class="name">Nicolas Zeller</span>
                         </div>
-                        <span class="description">Pizza</span>
-                        <span class="payment_amount payment_amount_negative" id="amount3" value="-20">-20.00€</span>
-                        <div class="status">paid</div>
+                        <span class="description">Kino</span>
+                        <span class="payment_amount payment_amount_positive" id="amount4" value="15.20">+15.20€</span>
+                        <div class="status">not paid</div>
                     </a>
-                    <div class="dropdown">
-                        <button class="dropbtn"> <i class="fas fa-ellipsis-v"></i></button>
-                        <div class="dropdown-content">
-                            <a href="payment_2.html">Pay via PayPal</a>
-                            <a href="payment2_edit.html">Edit </a>
-                            <a href="#" class="clear">Delete</a>
+                        <div class="dropdown">
+                            <button class="dropbtn"> <i class="fas fa-ellipsis-v"></i></button>
+                            <div class="dropdown-content">
+                                <a href="payment_4.html">Send Message</a>
+                                <a href="payment4_edit.html">Edit</a>
+                                <a href="#" class="clear">Delete</a>
+                            </div>
                         </div>
-                    </div>
-
+                    
                 </li>
+           
             </ul>
         </div>
     </div>
@@ -152,8 +170,6 @@
     getBalance();
 
     $("#list a.clear").click(function () {
-
-        console.log("hi");
         $(this).parent().parent().parent().remove();
         getBalance();
         return false;
@@ -164,6 +180,7 @@
         let value1 = 0;
         let value2 = 0;
         let value3 = 0;
+        let value4 = 0;
         let balance_field = document.getElementById('amount');
         let new_balance;
 
@@ -179,10 +196,12 @@
             value3 = parseFloat(document.getElementById('amount3').getAttribute('value'));
         }
 
-        let balance = value1 + value2 + value3;
-        balance = balance.toFixed(2);
+        if (document.getElementById('amount4') != null) {
+            value4 = parseFloat(document.getElementById('amount4').getAttribute('value'));
+        }
 
-        console.log(balance);
+        let balance = value1 + value2 + value3 + value4;
+        balance = balance.toFixed(2);
 
         if (balance >= 0) {
             new_balance = "+" + balance;
