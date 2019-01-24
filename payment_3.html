@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Debit Manager - Payment</title>
+    <meta name="description" content="MoneyManager Sign Up">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="same-origin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sign_in.css">
+    <link rel="stylesheet" href="./css/sign_up.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body class="show_payment">
+    <div class="payment_">
+        <div class="payment_info">
+            <div class="info">Eva Strumegger</div> 
+            <div>owes you</div>
+            <div class="info">
+                    30,60€
+            </div>  
+            <div>
+                    for
+            </div> 
+            <div class="info">
+                    Pizza.
+            </div> 
+            <div>Send a reminder Message!</div>
+            <div class="go_back"><a href="javascript:history.back()">Go Back</a></div>
+        </div>
+        <form class="message_form" action="javascript:history.back()">
+            <h1>Send a reminder Message</h1>
+            <div class="input__login">
+                        <i class="fas fa-user"></i>
+                        <label for="name" class="label__login">Name</label>
+                        <input id="name" type="text" class="input_message" placeholder="Name">
+            </div>
+            <div class="input__login">
+                <i class="fas fa-envelope"></i>
+                <label for="email" class="label__login">Email</label>
+                <input id="email" type="text" class="input_message" placeholder="Email">
+            </div>
+            <div class="input__login">
+                    <i class="fas fa-envelope"></i>
+                    <label for="email" class="label__login">Message</label>
+                    <textarea id="email" type="text" class="input_message_textarea" placeholder="Message"></textarea>
+            </div>
+            <div>
+                <button class="send_message" onclick="send_message()">Send Message</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <a href="./impressum_sign_out.html">Impressum</a>
+    </footer>
+
+    <script>
+    function send_message(){
+        alert("Message has been sent.");
+    }
+    </script>
+</body>
+
+</html>

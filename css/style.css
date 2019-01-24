@@ -333,6 +333,11 @@ a.clear:hover {
 
 /*----------------------------------------------------------------------------------------------*/
 
+.go_back a{
+    color: black;
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width: 550px) {
     .addPayment {
