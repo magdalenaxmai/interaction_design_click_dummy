@@ -118,6 +118,10 @@
     border-radius: 20px;
 }
 
+.sign-in-button:hover{
+    background-color: #00b064;
+}
+
 .forgot_password{
     margin-top: 20px;
     width: 100%;

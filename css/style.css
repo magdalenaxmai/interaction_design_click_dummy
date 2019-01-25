@@ -78,6 +78,7 @@ a {
 
 .addPayment:hover{
     cursor: pointer;
+    background-color: #00b064;
 }
 
 .your_payments {
@@ -104,6 +105,10 @@ a {
 .payment .fas {
     margin-right: 10px;
     padding-top: 2.5px;
+}
+
+.fa-money-bill-alt {
+    font-size: 0.9em;
 }
 
 /*----------------------------------------------------------------------------------------------*/
@@ -220,6 +225,10 @@ a.clear:hover {
 /*----------------------------------------------------------------------------------------------*/
 
 /*List of Payments*/
+
+#list li:hover {
+    background-color: #f8f8f8;
+}
 
 .list_of_payments {
     display: flex;

@@ -1,4 +1,4 @@
-.sign-in-button{
+.contact-button{
     background-color: #00cb74;
     border: none;
     color: #fff;
@@ -8,6 +8,19 @@
     padding-right: 30px;
     border-radius: 20px;
     margin-top: 1em;
+}
+
+.contact-button:hover{
+    background-color: #28303a;
+}
+
+.new_contact_image:hover{
+    background-color:#908f8f;
+}
+
+.fa-edit{
+    margin-left: 0;
+    margin-right: 0.5em;
 }
 
 ul {
