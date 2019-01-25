@@ -41,24 +41,33 @@ a {
 /*Navigation Bar*/
 
 .logout {
+    text-align: right;
+    flex: 1;
     color: white;
     text-decoration: none;
-    padding-right: 13%;
     z-index: +3;
 }
 
 .topnav {
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    justify-content: space-between;
-    width: 90%;
-    height: 80px;
-    padding-left: 11%;
-    padding-right: 50px;
-    padding-top: 20px;
-    z-index: +1;
-    background-color: #28303a;
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	/* align-content: center; */
+	width: 78%;
+	height: 80px;
+	padding-left: 0%;
+	/* padding-right: 50px; */
+	padding-top: 20px;
+	z-index: +1;
+	background-color: #28303a;
+	padding-left: 11%;
+	padding-right: 11%;
+	/* align-content: space-evenly; */
+	flex-basis: 0;
+}
+
+.profile_menu {
+	flex: 1;
 }
 
 .addPayment {
@@ -116,17 +125,20 @@ a {
 /*Top Bar*/
 
 .top-bar {
-    display: flex;
-    width: 100%;
-    margin-top: 120px;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-around;
+	display: flex;
+	width: 78%;
+	margin-top: 120px;
+	/* align-content: center; */
+	/* align-items: center; */
+	/* justify-items: center; */
+	justify-content: center;
+	padding-left: 11%;
+	padding-right: 11%;
 }
 
 .search {
     width: 300px;
+    flex: 1;
 }
 
 .search img {
@@ -144,6 +156,11 @@ a {
 
 /*Drop-Down for Filter*/
 
+.Filter {
+    flex: 1;
+    text-align: right;
+} 
+
 .fas {
     margin-left: 10px;
 }
@@ -152,6 +169,7 @@ a {
     background: none;
     font-size: 16px;
     border: none;
+    /* padding-right: 0; */
 }
 
 .dropdown {
@@ -166,6 +184,8 @@ a {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: +1;
+    margin-left: 58%;
+    text-align: left;
 }
 
 .dropdown-content a {
@@ -184,6 +204,8 @@ a {
 }
 
 .contacts {
+    flex: 1;
+    text-align: center;
 }
 
 a.clear:hover {
@@ -207,6 +229,7 @@ a.clear:hover {
 .all_categories {
     display: flex;
     justify-content: center;
+    max-width: 88em;
 }
 
 .categories {
@@ -246,6 +269,7 @@ a.clear:hover {
 .all_payments {
     display: flex;
     justify-content: center;
+    max-width: 88em;
 }
 
 .payment_list_item {
@@ -345,6 +369,19 @@ a.clear:hover {
 .go_back a{
     color: black;
     text-decoration: underline;
+}
+
+.fa-search{
+    margin-left: 0px;
+}
+
+.balance{
+    flex: 1;
+    text-align: center;
+}
+
+#list .dropdown-content{
+    margin-left: 0;
 }
 
 

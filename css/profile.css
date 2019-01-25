@@ -20,3 +20,7 @@
     color: #c3c3c3;
     line-height: 1.5em;
 }
+
+.new_profile_image:hover{
+    background-color:#908f8f;
+}

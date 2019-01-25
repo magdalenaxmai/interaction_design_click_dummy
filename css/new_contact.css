@@ -15,6 +15,10 @@
     align-content: center;
 }
 
+.new_contact_image:hover{
+  background-color:#908f8f;
+}
+
 .new_payment_form input{
     margin-top: 10px;
     margin-bottom: 20px;
