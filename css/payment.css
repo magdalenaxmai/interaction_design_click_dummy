@@ -136,4 +136,7 @@ h1{
     font-size: 0.9em;
 }
 
-
+.send_message:hover{
+    background-color: white;
+    color: black;
+}
